@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Amigafa.Models.Militar>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RgCivil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RgMilitar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeGuerra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostoGrad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFormatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroEndereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComplementoEndereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RgCivil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RgMilitar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeGuerra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostoGrad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataFormatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Endereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroEndereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComplementoEndereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bairro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Cpf }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Cpf }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Cpf })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Amigafa.Models.Formulario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EncontroVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChurrascoVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompletoVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisaExtra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BoneExtra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VinhoVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VinhoConvidado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EncontroVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChurrascoVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompletoVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisaExtra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoneExtra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VinhoVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VinhoConvidado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

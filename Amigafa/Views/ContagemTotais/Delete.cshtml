@@ -1,0 +1,128 @@
+﻿@model Amigafa.Models.ContagemTotal
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ContagemTotal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoEncontroVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoEncontroVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoChurrascoVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoChurrascoVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoCompletoVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoCompletoVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoEncontroConvidado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoEncontroConvidado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoChurrascoConvidado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoChurrascoConvidado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoCompletoConvidado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoCompletoConvidado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisetaP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisetaP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisetaM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisetaM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisetaG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisetaG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisetaGG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisetaGG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisetaXG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisetaXG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisetaXGG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisetaXGG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bone)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

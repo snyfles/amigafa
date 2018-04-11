@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Amigafa.Models.Convidado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parentesco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Camisa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoEncontro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoChurrasco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoCompleto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoVinho)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parentesco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Camisa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoEncontro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoChurrasco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoCompleto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoVinho)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MilitarCpf }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MilitarCpf }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MilitarCpf })
+        </td>
+    </tr>
+}
+
+</table>

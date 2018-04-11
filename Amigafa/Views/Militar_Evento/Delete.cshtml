@@ -1,0 +1,64 @@
+﻿@model Amigafa.Models.Militar_Evento
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Militar_Evento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Camiseta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Camiseta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoEncontro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoEncontro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoChurrasco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoChurrasco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoVinho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoVinho)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

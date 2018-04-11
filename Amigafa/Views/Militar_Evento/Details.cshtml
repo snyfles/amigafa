@@ -1,0 +1,58 @@
+﻿@model Amigafa.Models.Militar_Evento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Militar_Evento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Camiseta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Camiseta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoEncontro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoEncontro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoChurrasco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoChurrasco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventoVinho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventoVinho)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Militar_Cpf }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

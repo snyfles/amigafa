@@ -1,0 +1,88 @@
+﻿@model Amigafa.Models.Formulario
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Formulario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EncontroVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EncontroVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChurrascoVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChurrascoVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompletoVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompletoVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamisaExtra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamisaExtra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BoneExtra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BoneExtra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VinhoVeterano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VinhoVeterano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VinhoConvidado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VinhoConvidado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

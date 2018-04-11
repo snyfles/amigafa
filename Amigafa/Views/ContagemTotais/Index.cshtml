@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Amigafa.Models.ContagemTotal>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoEncontroVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoChurrascoVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoCompletoVeterano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoEncontroConvidado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoChurrascoConvidado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoCompletoConvidado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisetaP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisetaM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisetaG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisetaGG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisetaXG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamisetaXGG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoEncontroVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoChurrascoVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoCompletoVeterano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoEncontroConvidado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoChurrascoConvidado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoCompletoConvidado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisetaP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisetaM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisetaG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisetaGG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisetaXG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamisetaXGG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
